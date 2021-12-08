@@ -1,13 +1,12 @@
-import friends from "../../data/friends.json";
 import FriendItem from "./FriendItem/FriendItem";
 
-const FriendList = () => {
+const FriendList = ({ friends }) => {
   return (
-    <div>
+    <ul className="friend-list">
       {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
       ))}
-    </div>
+    </ul>
   );
 };
 

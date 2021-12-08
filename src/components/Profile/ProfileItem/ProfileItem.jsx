@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ProfileItem = ({ username, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
   return (
@@ -12,21 +14,28 @@ const ProfileItem = ({ username, tag, location, avatar, stats }) => {
 
         <ul className="stats">
           <li>
-            <span className="label">{followers}</span>
-            <span className="quantity">1000</span>
+            <span className="label">Followers</span>
+            <span className="quantity">{followers}</span>
           </li>
           <li>
-            <span className="label">{views}</span>
-            <span className="quantity">2000</span>
+            <span className="label">Views</span>
+            <span className="quantity">{views}</span>
           </li>
           <li>
-            <span className="label">{likes}</span>
-            <span className="quantity">3000</span>
+            <span className="label">Likes</span>
+            <span className="quantity">{likes}</span>
           </li>
         </ul>
       </div>
     </div>
   );
+};
+ProfileItem.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number),
 };
 
 export default ProfileItem;
