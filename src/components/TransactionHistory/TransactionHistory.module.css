@@ -1,0 +1,21 @@
+.transaction {
+  background-color: rgb(206, 202, 202);
+  width: 400px;
+
+  border: 1px solid silver;
+}
+.thead {
+  margin-top: 10px;
+  background-color: rgb(24, 128, 189);
+}
+.section {
+  border: 1px solid rgb(73, 69, 69);
+}
+.data {
+  margin-right: 18px;
+  padding: 10px;
+}
+.item {
+  padding: 20px 80px;
+  border-right: 1px solid #fff;
+}

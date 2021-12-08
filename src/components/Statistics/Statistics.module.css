@@ -1,0 +1,40 @@
+.stat {
+  background-color: rgb(206, 202, 202);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid silver;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px;
+  color: wheat;
+  background-color: rgb(29, 176, 221);
+}
+.label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.percentage {
+  font-size: 20px;
+  font-weight: bold;
+}
